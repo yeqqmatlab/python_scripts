@@ -8,6 +8,7 @@ author yqq
 import time
 import psutil
 import datetime
+import os
 
 now_time = datetime.datetime.now().strftime('%Y_%m_%d')
 
@@ -25,4 +26,13 @@ with open("monitor_cpu_mem_"+now_time+".csv", "a+") as f:
     f.write(line + "\n")
     # 每5秒执行一次
     # time.sleep(2)
+
+log1 = "ping_ip247_info_"+now_time+".log"
+os.system('date >> ' + log1)
+os.system('ping -c 1 -w 1 ip247 >> ' + log1)
+
+log2 = "ping_baidu_info_"+now_time+".log"
+os.system('date >> ' + log2)
+os.system('ping -c 1 -w 1 www.baidu.com >> ' + log2)
+
 
