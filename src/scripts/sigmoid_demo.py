@@ -20,3 +20,5 @@ y = sigmoid(x)
 # print(sigmoid(arr))
 plt.plot(x, y)
 plt.show()
+
+print(help(numpy.arange))
