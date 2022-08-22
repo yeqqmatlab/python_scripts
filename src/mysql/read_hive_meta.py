@@ -16,7 +16,7 @@ conn_sink = pymysql.connect(host="192.168.1.210"
                             , port=3307
                             , user="zsy"
                             , password="lc12345"
-                            , db="data_mining"
+                            , db="zsy_data"
                             , charset='utf8'
                             , cursorclass=pymysql.cursors.DictCursor)
 
@@ -41,9 +41,9 @@ try:
 finally:
     conn_hive.close()
 
-sql_insert = "INSERT INTO tbl_monitor_hive(id,table_name,field_num) VALUES(%s,%s,%s)"
+sql_insert = "INSERT INTO monitor_hive_meta(id,table_name,field_num) VALUES(%s,%s,%s)"
 
-sql_truncate = "truncate tbl_monitor_hive"
+sql_truncate = "truncate monitor_hive_meta"
 
 try:
     with conn_sink.cursor() as cursor_sink:

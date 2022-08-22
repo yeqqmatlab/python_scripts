@@ -18,7 +18,7 @@ conn_sink = pymysql.connect(host="192.168.1.210"
                             , port=3307
                             , user="zsy"
                             , password="lc12345"
-                            , db="data_mining"
+                            , db="zsy_data"
                             , charset='utf8'
                             , cursorclass=pymysql.cursors.DictCursor)
 
@@ -42,8 +42,8 @@ try:
 finally:
     connection.close()
 
-sql_insert = "INSERT INTO tbl_monitor_mysql(id,table_name,field_num) VALUES(%s,%s,%s)"
-sql_truncate = "truncate tbl_monitor_mysql"
+sql_insert = "INSERT INTO monitor_mysql_meta(id,table_name,field_num) VALUES(%s,%s,%s)"
+sql_truncate = "truncate monitor_mysql_meta"
 
 try:
     with conn_sink.cursor() as cursor_sink:
@@ -56,6 +56,6 @@ finally:
     conn_sink.close()
 
 
-print(schemes)
+# print(schemes)
 
 
