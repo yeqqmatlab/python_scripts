@@ -1,0 +1,9 @@
+age	workclass	fnlwgt	education	education-num	marital-status	relationship	race	sex	capital-gain	capital-loss	hours-per-week	native-country	occupation
+26.0	Private	168294.0	HS-grad	9.0	Never-married	Own-child	White	Male	0	0	40.0	United-States	Craft-repair
+55.0	Private	180211.0	Some-college	10.0	Married-civ-spouse	Husband	Asian-Pac-Islander	Male	0	0	60.0	South	Craft-repair
+32.0	Private	367260.0	HS-grad	9.0	Divorced	Not-in-family	White	Male	0	0	80.0	United-States	Exec-managerial
+49.0	Private	193366.0	HS-grad	10.0	Married-civ-spouse	Husband	White	Male	0	0	40.0	United-States	Craft-repair
+27.0	Local-gov	190708.0	Assoc-acdm	12.0	Never-married	Not-in-family	White	Male	0	0	52.0	United-States	Protective-serv
+19.0	Private	289980.0	HS-grad	9.0	Never-married	Not-in-family	White	Male	0	0	35.0	United-States	Handlers-cleaners
+57.0	Federal-gov	337895.0	Bachelors	15.0	Married-civ-spouse	Husband	Black	Male	0	0	40.0	United-States	Prof-specialty
+50.0	Private	144361.0	HS-grad	9.0	Married-civ-spouse	Husband	White	Male	0	0	38.0	United-States	Machine-op-inspct

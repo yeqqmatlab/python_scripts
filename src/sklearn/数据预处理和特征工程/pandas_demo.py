@@ -9,5 +9,4 @@ data.loc[:, "Age"] = data.loc[:, "Age"].fillna(data.loc[:, "Age"].median())
 
 print(data.info())
 
-
 print(data.loc[:, "Age"])
